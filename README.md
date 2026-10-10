@@ -1,15 +1,51 @@
-# TP02PHPEjgannour_Salma-
-TP 02 PHP-Programming web 2-2026/2027
-## Exercice 2 : Explication sur les variables PHP
-
-### Pourquoi `$note` et `$Note` sont différentes ?
-En PHP, les noms de variables sont **sensibles à la casse** (case-sensitive). Cela signifie que `$note` et `$Note` sont traitées comme deux variables totalement distinctes en mémoire.
-
-### Identification des noms de variables valides et invalides :
-- `$a` : **Valide** (commence par une lettre)
-- `$_a` : **Valide** (commence par un tiret bas `_`)
-- `$a_a` : **Valide** (contient des lettres et un tiret bas)
-- `$AAA` : **Valide** (contient des majuscules)
-- `$a!` : **Invalide** (le caractère spécial `!` n'est pas autorisé)
-- `$1a` : **Invalide** (ne peut pas commencer par un chiffre)
-- `$a1` : **Valide** (contient un chiffre après une lettre)
+# TP02PHPEjgannour_salma-ma
+TP 02 PHP — Programmation Web 2 — 2026/2027
+## Informations
+Nom :  ejgannour
+Prénom : salma
+Groupe : G1
+Liste des exercices
+Exercice 1 : Balises PHP, HTML/PHP, commentaires, echo
+Exercice 2 : Variables, casse, concaténation, opérateur .=
+Exercice 3 : Constantes, calculs, affectation composée
+Exercice 4 : Types, var_dump(), conversions
+Exercice 5 : Conditions if / elseif / else
+Exercice 6 : switch / case
+Exercice 7 : Boucles for
+Exercice 8 : while / do-while / continue / break
+Exercice 9 : Tableaux associatifs et foreach
+Exercice 10 : Formulaires GET / POST
+Exercice 2
+En PHP, les variables sont sensibles à la casse. Ainsi, $note et $Note sont deux variables différentes.
+Noms de variables valides
+$a
+$_a
+$a_a
+$AAA
+$a1
+Noms de variables invalides
+$a!
+$1a
+Exercice 4
+Avec echo, la valeur true s'affiche comme 1, tandis que false n'affiche rien.
+Avec var_dump(), PHP affiche le type et la valeur :
+true donne bool(true)
+false donne bool(false)
+Exercice 5
+Valeurs testées et résultats obtenus :
+-1 → Note invalide
+9 → Non validé
+10 → Passable
+12 → Assez bien
+14 → Bien
+16 → Très bien
+21 → Note invalide
+Exercice 10 - Partie A : GET
+Après l'envoi du formulaire avec la méthode GET, les valeurs saisies apparaissent directement dans l'URL après le symbole ?.
+Exemple :
+ex10_get.php?nom=ejgannour&prenom=salma&groupe=gp 1
+Exercice 10 - Partie B : POST
+Avec la méthode POST, les valeurs saisies dans le formulaire n'apparaissent pas dans l'URL.
+Contrairement à GET, l'URL reste généralement sous la forme :
+ex10_post.php
+Avec GET, les valeurs apparaissent dans l'URL après le symbole ?.
